@@ -29,3 +29,7 @@ Type: `object`
 
 `[debugLog]`: log progress to console. (default false)
 
+---
+
+## License
+Copyright © 2017, Erdem Bircan. Released under the MIT License.

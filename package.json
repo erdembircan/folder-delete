@@ -1,6 +1,6 @@
 {
   "name": "folder-delete",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "delete folders with all child folders and files",
   "main": "index.js",
   "engines": {
