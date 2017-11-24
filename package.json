@@ -7,7 +7,7 @@
     "node": ">=4.2.4"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --verbose --watchAll"
   },
   "repository": {
     "type": "git",
