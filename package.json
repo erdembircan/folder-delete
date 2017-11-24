@@ -7,16 +7,14 @@
     "node": ">=4.2.4"
   },
   "scripts": {
-    "test": "jest --verbose --watchAll"
+    "test": "jest --verbose --watchAll",
+    "testTravis": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/erdembircan/folder-delete.git"
   },
-  "keywords": [
-    "folder",
-    "delete"
-  ],
+  "keywords": ["folder", "delete"],
   "author": "Erdem Bircan <erdem.erdembircan@gmail.com> (https://erdembircan.github.io/)",
   "license": "MIT",
   "bugs": {

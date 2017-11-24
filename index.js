@@ -6,6 +6,10 @@ const _options = {
   debugLog: false,
 };
 
+/**
+ * parse user options and merge with default ones
+ * @param {object} userOptions - user optiosn object
+ */
 function _parseOptions(userOptions) {
   if (typeof userOptions === 'object') {
     Object.keys(_options).forEach((key) => {
@@ -16,6 +20,11 @@ function _parseOptions(userOptions) {
   }
 }
 
+/**
+ * delete directory with its child folders and files at the given path
+ * @param {string} dirPath - path to directory
+ * @param {object} options - options
+ */
 function removeDirSync(dirPath, options) {
   _parseOptions(options);
   if (fs.existsSync(dirPath)) {
@@ -34,3 +43,4 @@ function removeDirSync(dirPath, options) {
 }
 
 module.exports = removeDirSync;
+exports._parseOptions = _parseOptions;
