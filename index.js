@@ -2,13 +2,16 @@ const fs = require('fs');
 const logUtils = require('./logUtils');
 const path = require('path');
 
+/** @typedef _options
+ *  @prop {boolean} [debugLog] - log messages to console
+ */
 const _options = {
   debugLog: false,
 };
 
 /**
  * parse user options and merge with default ones
- * @param {object} userOptions - user optiosn object
+ * @param {object} [userOptions] - user options object
  */
 function _parseOptions(userOptions) {
   if (typeof userOptions === 'object') {
@@ -23,7 +26,7 @@ function _parseOptions(userOptions) {
 /**
  * delete directory with its child folders and files at the given path
  * @param {string} dirPath - path to directory
- * @param {object} options - options
+ * @param {_options} [options] - options
  */
 function removeDirSync(dirPath, options) {
   _parseOptions(options);
@@ -43,4 +46,3 @@ function removeDirSync(dirPath, options) {
 }
 
 module.exports = removeDirSync;
-exports._parseOptions = _parseOptions;
