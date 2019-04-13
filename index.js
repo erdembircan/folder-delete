@@ -1,6 +1,6 @@
 const fs = require('fs');
-const logUtils = require('./logUtils');
 const path = require('path');
+const logUtils = require('./logUtils');
 
 /** @typedef _options
  *  @prop {boolean} [debugLog] - log messages to console
@@ -45,4 +45,5 @@ function removeDirSync(dirPath, options) {
   } else if (_options.debugLog) logUtils.logError(`invalid path [${dirPath}]`);
 }
 
+/** @module folder-delte */
 module.exports = removeDirSync;

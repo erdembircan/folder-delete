@@ -1,6 +1,6 @@
-const deleteFolder = require('../index');
 const fs = require('fs');
 const path = require('path');
+const deleteFolder = require('../index');
 
 const path1 = path.resolve(__dirname, 'testFolder');
 const path2 = path.resolve(__dirname, 'testFolder', 'innerTestFolder');
@@ -18,7 +18,7 @@ describe('delete-folder', () => {
     fs.closeSync(fs.openSync(path.resolve(__dirname, 'testFolder', 'innerTestFolder', 'test02.dat'), 'w'));
 
     expect(fs.existsSync(path1)).toBeTruthy();
-    deleteFolder(path1);
+    deleteFolder(path1, { debugLog: true });
     expect(fs.existsSync(path1)).toBeFalsy();
   });
 });

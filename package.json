@@ -1,6 +1,6 @@
 {
   "name": "folder-delete",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "delete folders with all child folders and files",
   "main": "index.js",
   "engines": {
@@ -14,7 +14,10 @@
     "type": "git",
     "url": "git+https://github.com/erdembircan/folder-delete.git"
   },
-  "keywords": ["folder", "delete"],
+  "keywords": [
+    "folder",
+    "delete"
+  ],
   "author": "Erdem Bircan <erdem.erdembircan@gmail.com> (https://erdembircan.github.io/)",
   "license": "MIT",
   "bugs": {
@@ -22,9 +25,9 @@
   },
   "homepage": "https://github.com/erdembircan/folder-delete#readme",
   "dependencies": {
-    "chalk": "^2.3.0"
+    "fancy-terminal": "^1.0.1"
   },
   "devDependencies": {
-    "jest": "^21.2.1"
+    "jest": "^24.7.1"
   }
 }
